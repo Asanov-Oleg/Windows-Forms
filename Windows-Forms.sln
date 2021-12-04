@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF Reader", "PDF Reader\PDF Reader.csproj", "{E8F931A4-855C-4BF9-9BDD-3A84CF64F3BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAnim", "WinAnim\WinAnim.csproj", "{BBA7E046-5542-4484-A17C-FDB71F5166EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E8F931A4-855C-4BF9-9BDD-3A84CF64F3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8F931A4-855C-4BF9-9BDD-3A84CF64F3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8F931A4-855C-4BF9-9BDD-3A84CF64F3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA7E046-5542-4484-A17C-FDB71F5166EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA7E046-5542-4484-A17C-FDB71F5166EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA7E046-5542-4484-A17C-FDB71F5166EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA7E046-5542-4484-A17C-FDB71F5166EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
