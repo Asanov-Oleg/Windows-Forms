@@ -25,5 +25,13 @@ namespace WinAsynchDelegate
                 MessageBox.Show("Поле должно содержать цифры");
             }
         }
+
+        private void TimeConsumingMethod(int seconds)
+        {
+            for (int j = 1; j <= seconds; j++)
+                System.Threading.Thread.Sleep(1000);
+        }
+
+        private delegate void TimeConsumingMethodDelegate(int seconds);
     }
 }
