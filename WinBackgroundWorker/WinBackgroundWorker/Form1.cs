@@ -66,7 +66,7 @@ namespace WinBackgroundWorker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            backgroundWorker1.CancelAsync(i);
+            backgroundWorker1.CancelAsync();
         }
     }
 }
