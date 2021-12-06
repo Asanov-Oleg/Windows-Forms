@@ -45,6 +45,7 @@ namespace WinAsynchMethod
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "Сумма";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // lblA
             // 
@@ -72,6 +73,7 @@ namespace WinAsynchMethod
             this.btnWork.TabIndex = 3;
             this.btnWork.Text = "Работа";
             this.btnWork.UseVisualStyleBackColor = true;
+            this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
             // txbA
             // 
