@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// ab
+// abc
 namespace WinAsynchMethod
 {
     public partial class Form1 : Form
@@ -53,6 +53,11 @@ namespace WinAsynchMethod
         private void btnWork_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Работа кипит!!!");
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, helpProvider1.HelpNamespace);
         }
     }
 }
