@@ -29,6 +29,7 @@ namespace WinAsynchMethod
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnRun = new System.Windows.Forms.Button();
             this.lblA = new System.Windows.Forms.Label();
             this.lblB = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@ namespace WinAsynchMethod
             this.txbB = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnRun
@@ -48,6 +50,7 @@ namespace WinAsynchMethod
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "Сумма";
+            this.toolTip1.SetToolTip(this.btnRun, "Sum");
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -78,6 +81,7 @@ namespace WinAsynchMethod
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 3;
             this.btnWork.Text = "Работа";
+            this.toolTip1.SetToolTip(this.btnWork, "Start work");
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
@@ -89,6 +93,7 @@ namespace WinAsynchMethod
             this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 20);
             this.txbA.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txbA, "For input integer A");
             // 
             // txbB
             // 
@@ -98,6 +103,7 @@ namespace WinAsynchMethod
             this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 20);
             this.txbB.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.txbB, "For input integer B");
             // 
             // helpProvider1
             // 
@@ -146,6 +152,7 @@ namespace WinAsynchMethod
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
