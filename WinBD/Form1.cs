@@ -23,7 +23,7 @@ namespace WinBD
             System.Data.OleDb.OleDbDataReader myReader;
             string CustomerString;
             oleDbConnection1.Open();
-            myReaderReader = oleDbCommand1.ExecuteReader();
+            myReader = oleDbCommand1.ExecuteReader();
             while (myReader.Read())
             {
                 CustomerString = myReader[1].ToString() + " " + myReader[2].ToString();

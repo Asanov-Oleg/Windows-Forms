@@ -37,7 +37,7 @@ namespace WinBD
             // 
             // oleDbCommand1
             // 
-            this.oleDbCommand1.CommandText = "SELECT * FROM Заказчики";
+            this.oleDbCommand1.CommandText = "SELECT * FROM Поставщики";
             this.oleDbCommand1.Connection = this.oleDbConnection1;
             // 
             // oleDbConnection1
