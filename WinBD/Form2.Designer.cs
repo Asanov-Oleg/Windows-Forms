@@ -48,8 +48,11 @@ namespace WinBD
             this.адресПоставщикаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.телефонDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataSet11 = new WinBD.DataSet1();
+            this.поставщикиTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
+            this.rbProductDataSet1 = new WinBD.RBProductDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -158,7 +161,7 @@ namespace WinBD
             this.SortTextBox.Name = "SortTextBox";
             this.SortTextBox.Size = new System.Drawing.Size(100, 20);
             this.SortTextBox.TabIndex = 5;
-            this.SortTextBox.Text = "Фамилия";
+            this.SortTextBox.Text = "Телефон";
             // 
             // Filte
             // 
@@ -215,6 +218,15 @@ namespace WinBD
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // поставщикиTableAdapter1
+            // 
+            this.поставщикиTableAdapter1.ClearBeforeFill = true;
+            // 
+            // rbProductDataSet1
+            // 
+            this.rbProductDataSet1.DataSetName = "RBProductDataSet";
+            this.rbProductDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +243,7 @@ namespace WinBD
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +269,7 @@ namespace WinBD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox SortTextBox;
         private System.Windows.Forms.TextBox Filte;
+        private RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
+        private RBProductDataSet rbProductDataSet1;
     }
 }

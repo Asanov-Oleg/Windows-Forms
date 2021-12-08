@@ -42,5 +42,16 @@ namespace WinBD.Properties {
                 return ((string)(this["RBProductConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\Admin\\source\\repos\\Asanov-O" +
+            "leg\\Windows-Forms\\RBProduct.mdb")]
+        public string RBProductConnectionString1 {
+            get {
+                return ((string)(this["RBProductConnectionString1"]));
+            }
+        }
     }
 }
