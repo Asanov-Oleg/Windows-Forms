@@ -37,5 +37,14 @@ namespace WinBD
             Form2 Exercise2 = new Form2();
             Exercise2.Show();
         }
+        private BindingSource sotrBindingSource;
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            поставщикиTableAdapter1.Fill(rbProductDataSet1.Поставщики);
+            sotrBindingSource = new BindingSource(rbProductDataSet1, "Поставщики");
+            PstvtextBox.DataBindings.Add("Text", sotrBindingSource, "Название_поставщика");
+            AdrstextBox.DataBindings.Add("Text", sotrBindingSource, "Адрес_поставщика");
+            CodetextBox.DataBindings.Add("Text", sotrBindingSource, "Код_поставщика");
+        }
     }
 }
