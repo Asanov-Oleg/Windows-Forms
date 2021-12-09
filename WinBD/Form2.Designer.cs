@@ -52,6 +52,7 @@ namespace WinBD
             this.dataSet11 = new WinBD.DataSet1();
             this.поставщикиTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
             this.rbProductDataSet1 = new WinBD.RBProductDataSet();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
@@ -189,7 +190,7 @@ namespace WinBD
             this.FilterTextBox.Name = "FilterTextBox";
             this.FilterTextBox.Size = new System.Drawing.Size(100, 20);
             this.FilterTextBox.TabIndex = 6;
-            this.FilterTextBox.Text = "[Адрес поставщика] = \'Пушкин\'";
+            this.FilterTextBox.Text = "[Адрес поставщика] = \'г. Санкт-Петербург, ул. Весенняя, 62\'";
             // 
             // кодПоставщикаDataGridViewTextBoxColumn
             // 
@@ -234,11 +235,22 @@ namespace WinBD
             this.rbProductDataSet1.DataSetName = "RBProductDataSet";
             this.rbProductDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(353, 17);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(89, 54);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Сортировка и фильтрация";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 261);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.FilterTextBox);
             this.Controls.Add(this.SortTextBox);
             this.Controls.Add(this.label2);
@@ -280,5 +292,6 @@ namespace WinBD
         private System.Windows.Forms.TextBox FilterTextBox;
         private RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
         private RBProductDataSet rbProductDataSet1;
+        private System.Windows.Forms.Button button3;
     }
 }

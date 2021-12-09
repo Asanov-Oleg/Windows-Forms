@@ -29,5 +29,11 @@ namespace WinBD
         {
             oleDbDataAdapter1.Update(dataSet11);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ПоставщикиDataView.Sort = SortTextBox.Text;
+            ПоставщикиDataView.RowFilter = FilterTextBox.Text;
+        }
     }
 }
