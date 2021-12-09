@@ -71,9 +71,9 @@ namespace WinBD
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 355);
+            this.listBox1.Location = new System.Drawing.Point(0, 192);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(800, 95);
+            this.listBox1.Size = new System.Drawing.Size(411, 95);
             this.listBox1.TabIndex = 1;
             // 
             // button2
@@ -93,21 +93,21 @@ namespace WinBD
             // 
             // PstvtextBox
             // 
-            this.PstvtextBox.Location = new System.Drawing.Point(170, 199);
+            this.PstvtextBox.Location = new System.Drawing.Point(299, 8);
             this.PstvtextBox.Name = "PstvtextBox";
             this.PstvtextBox.Size = new System.Drawing.Size(100, 20);
             this.PstvtextBox.TabIndex = 3;
             // 
             // AdrstextBox
             // 
-            this.AdrstextBox.Location = new System.Drawing.Point(170, 225);
+            this.AdrstextBox.Location = new System.Drawing.Point(299, 34);
             this.AdrstextBox.Name = "AdrstextBox";
             this.AdrstextBox.Size = new System.Drawing.Size(100, 20);
             this.AdrstextBox.TabIndex = 4;
             // 
             // CodetextBox
             // 
-            this.CodetextBox.Location = new System.Drawing.Point(170, 251);
+            this.CodetextBox.Location = new System.Drawing.Point(299, 60);
             this.CodetextBox.Name = "CodetextBox";
             this.CodetextBox.Size = new System.Drawing.Size(100, 20);
             this.CodetextBox.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace WinBD
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 202);
+            this.label1.Location = new System.Drawing.Point(228, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 6;
@@ -124,7 +124,7 @@ namespace WinBD
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 228);
+            this.label2.Location = new System.Drawing.Point(190, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 7;
@@ -133,7 +133,7 @@ namespace WinBD
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 254);
+            this.label3.Location = new System.Drawing.Point(202, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 8;
@@ -141,21 +141,23 @@ namespace WinBD
             // 
             // Previousbutton
             // 
-            this.Previousbutton.Location = new System.Drawing.Point(12, 285);
+            this.Previousbutton.Location = new System.Drawing.Point(324, 131);
             this.Previousbutton.Name = "Previousbutton";
             this.Previousbutton.Size = new System.Drawing.Size(75, 23);
             this.Previousbutton.TabIndex = 9;
             this.Previousbutton.Text = "Previous";
             this.Previousbutton.UseVisualStyleBackColor = true;
+            this.Previousbutton.Click += new System.EventHandler(this.Previousbutton_Click);
             // 
             // Nextbutton
             // 
-            this.Nextbutton.Location = new System.Drawing.Point(12, 314);
+            this.Nextbutton.Location = new System.Drawing.Point(324, 160);
             this.Nextbutton.Name = "Nextbutton";
             this.Nextbutton.Size = new System.Drawing.Size(75, 23);
             this.Nextbutton.TabIndex = 10;
             this.Nextbutton.Text = "Next";
             this.Nextbutton.UseVisualStyleBackColor = true;
+            this.Nextbutton.Click += new System.EventHandler(this.Nextbutton_Click);
             // 
             // поставщикиTableAdapter1
             // 
@@ -165,7 +167,7 @@ namespace WinBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(411, 287);
             this.Controls.Add(this.Nextbutton);
             this.Controls.Add(this.Previousbutton);
             this.Controls.Add(this.label3);

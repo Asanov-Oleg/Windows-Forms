@@ -46,5 +46,15 @@ namespace WinBD
             AdrstextBox.DataBindings.Add("Text", sotrBindingSource, "Адрес_поставщика");
             CodetextBox.DataBindings.Add("Text", sotrBindingSource, "Код_поставщика");
         }
+
+        private void Previousbutton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSource.MovePrevious();
+        }
+
+        private void Nextbutton_Click(object sender, EventArgs e)
+        {
+            sotrBindingSource.MoveNext();
+        }
     }
 }
