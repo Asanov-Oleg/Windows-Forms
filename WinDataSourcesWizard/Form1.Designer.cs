@@ -53,11 +53,20 @@ namespace WinDataSourcesWizard
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.товарыTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.ТоварыTableAdapter();
+            this.товарыDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingNavigator)).BeginInit();
             this.поставщикиBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // rBProductDataSet
@@ -79,7 +88,7 @@ namespace WinDataSourcesWizard
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.UpdateOrder = WinDataSourcesWizard.RBProductDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.ПоставщикиTableAdapter = this.поставщикиTableAdapter;
-            this.tableAdapterManager.ТоварыTableAdapter = null;
+            this.tableAdapterManager.ТоварыTableAdapter = this.товарыTableAdapter;
             // 
             // поставщикиBindingNavigator
             // 
@@ -215,7 +224,7 @@ namespace WinDataSourcesWizard
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.поставщикиDataGridView.DataSource = this.поставщикиBindingSource;
-            this.поставщикиDataGridView.Location = new System.Drawing.Point(53, 101);
+            this.поставщикиDataGridView.Location = new System.Drawing.Point(12, 28);
             this.поставщикиDataGridView.Name = "поставщикиDataGridView";
             this.поставщикиDataGridView.Size = new System.Drawing.Size(300, 220);
             this.поставщикиDataGridView.TabIndex = 1;
@@ -244,11 +253,60 @@ namespace WinDataSourcesWizard
             this.dataGridViewTextBoxColumn4.HeaderText = "Телефон";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // товарыBindingSource
+            // 
+            this.товарыBindingSource.DataMember = "ПоставщикиТовары";
+            this.товарыBindingSource.DataSource = this.поставщикиBindingSource;
+            // 
+            // товарыTableAdapter
+            // 
+            this.товарыTableAdapter.ClearBeforeFill = true;
+            // 
+            // товарыDataGridView
+            // 
+            this.товарыDataGridView.AutoGenerateColumns = false;
+            this.товарыDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.товарыDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.товарыDataGridView.DataSource = this.товарыBindingSource;
+            this.товарыDataGridView.Location = new System.Drawing.Point(12, 254);
+            this.товарыDataGridView.Name = "товарыDataGridView";
+            this.товарыDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.товарыDataGridView.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Код продукта";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Код продукта";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Наименование";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Наименование";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Цена, $";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Цена, $";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Код поставщика";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Код поставщика";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 490);
+            this.Controls.Add(this.товарыDataGridView);
             this.Controls.Add(this.поставщикиDataGridView);
             this.Controls.Add(this.поставщикиBindingNavigator);
             this.Name = "Form1";
@@ -260,6 +318,8 @@ namespace WinDataSourcesWizard
             this.поставщикиBindingNavigator.ResumeLayout(false);
             this.поставщикиBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +349,13 @@ namespace WinDataSourcesWizard
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private RBProductDataSetTableAdapters.ТоварыTableAdapter товарыTableAdapter;
+        private System.Windows.Forms.BindingSource товарыBindingSource;
+        private System.Windows.Forms.DataGridView товарыDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
 
